@@ -1,0 +1,8 @@
+version: 4.0.77
+steps:
+  - prompt: 'Click on the "Войти"  # Use the content of the file from the environment'
+    commands:
+      - command: hover-text
+        text: Войти
+        description: login button
+        action: click
