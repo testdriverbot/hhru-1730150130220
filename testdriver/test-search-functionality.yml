@@ -1,0 +1,22 @@
+version: 4.0.77
+steps:
+  - prompt: Enter a query into the search bar.
+    commands:
+      - command: hover-text
+        text: Профессия, должность или компания
+        description: search bar on the webpage
+        action: click
+      - command: type
+        text: Software Engineer
+  - prompt: Click the search button.
+    commands:
+      - command: hover-text
+        text: Найти
+        description: search button on the webpage
+        action: click
+  - prompt: >-
+      Assert that search results relevant to the query are displayed.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: search results are displayed
