@@ -1,0 +1,20 @@
+version: 4.0.77
+steps:
+  - prompt: Click on a job posting link.
+    commands:
+      - command: hover-text
+        text: Запустить видеоигру
+        description: job posting link
+        action: click
+  - prompt: Click on a job posting link.
+    commands:
+      - command: hover-text
+        text: Я ищу сотрудника
+        description: job posting link
+        action: click
+  - prompt: Click on a job posting link.
+    commands:
+      - command: hover-text
+        text: Работа в Москве
+        description: job posting link
+        action: click
