@@ -1,0 +1,26 @@
+version: 4.0.77
+steps:
+  - prompt: Click on the main call to action button.
+    commands:
+      - command: hover-text
+        text: Создать резюме
+        description: main call to action button
+        action: click
+  - prompt: >-
+      Assert that the intended page or modal appears.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: the registration page with title "Регистрация соискателя" is visible
+  - prompt: >-
+      Assert that the intended page or modal appears.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: the registration page with title "Регистрация соискателя" is visible
+  - prompt: >-
+      Assert that the intended page or modal appears.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: the registration page with title "Регистрация соискателя" is visible
